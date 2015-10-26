@@ -3,11 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-  <title>首页</title>
+  <title>balance car</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <link rel="stylesheet" href="static/css/sass/common.css">
-  <link rel="stylesheet" href="static/css/sass/swiper.3.1.7.min.css">
+  <link rel="stylesheet" href="/static/css/sass/common.css">
+  
+   <!--[if IE]>
+   <link rel="stylesheet" href="/static/css/sass/idangerous.swiper.css">
+   <![endif]-->
+  <!--[if !IE]><!-->
+    <link rel="stylesheet" href="/static/css/sass/swiper.3.1.7.min.css">
+  <!--><![endif]--> 
+
+  
 </head>
 <body>
   <div class="header">
@@ -16,16 +24,15 @@
 
     </span>
     
-    <img class="logo" src="static/img/logo.png" alt="">
+    <img class="logo" src="/static/img/logo.png" alt="">
     <span class="language"></span>
 
   </div>
   
   <div class="swiper-container">
       <div class="swiper-wrapper">
-          <div class="swiper-slide"><img class="banner_img active" src="static/img/banner2.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="banner_img" src="static/img/banner1.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="banner_img" src="static/img/banner2.jpg" alt=""></div>
+          <div class="swiper-slide"><a href="/balance_car"><img class="banner_img active" src="/static/img/banner2.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="/balance_car"><img class="banner_img" src="/static/img/banner2.jpg" alt=""></a></div>
       </div>
       <div class="swiper-pagination"></div>
   </div>
@@ -34,44 +41,56 @@
   <div class="container-fluid">
     <div class="container">
       <div class="bloc_1">
-        <img class="introduce" src="static/img/phc_6.5.jpg" alt="">
+        <img class="introduce" src="/static/img/phc1.jpg" alt="">
       </div>
       <div class="introduce_box bloc_2">
-        <h3>Ping Hanffe che</h3>
+        <h3>Balance car </h3>
         <p>A smart balance of the car two wheeled electric twist car body thinking sense of the car balance car scooter</p>
-        <a class="btn btn1" href="###">ChaKanXiang</a>
+        <a class="btn btn1" href="/balance_car">Detail..</a>
       </div>
     </div>
   </div>
-  <h2 class="produvt_title">Ping Hanffe che</h2>
+  <h2 class="produvt_title">Balance Car List</h2>
   <ul class="product_box">
     <li class="product_li">
-      <img class="product_img" src="static/img/shop_1.jpg" alt="">
-      <div class="content_box">
-        <h3>A Ba Ting third</h3>
-        <p>2015 A Ba Ting third generation of smart watches KT01W</p>
+      <a href="/balance_car" class="product_a">
+      <div class="product_img_box">
+        <img class="product_img" src="/static/img/phc_red_min.jpg" alt="">
       </div>
+      <div class="content_box">
+        <h3>Red-min Balance Car</h3>
+      </div>
+      </a>
     </li>
     <li class="product_li">
-      <img class="product_img" src="static/img/N1.jpg" alt="">
-      <div class="content_box">
-        <h3>Game Handle new N1</h3>
-        <p>Handle new N1 wireless Bluetooth gamepad iOS Andrews Mobile Games</p>
+      <a href="/balance_car" class="product_a">
+      <div class="product_img_box">
+        <img class="product_img" src="/static/img/phc_blue.jpg" alt="">
       </div>
+      <div class="content_box">
+        <h3>Blue Balance Car</h3>
+      </div>
+      </a>
     </li>
     <li class="product_li">
-      <img class="product_img" src="static/img/N1pro.jpg" alt="">
-      <div class="content_box">
-        <h3>Game Handle new N1 Pro</h3>
-        <p>The new N1 Pro PC tablet mobile phone handle wireless Bluetooth gamepad iOS Android general Mobile Games</p>
+      <a href="/balance_car" class="product_a">
+      <div class="product_img_box">
+        <img class="product_img" src="/static/img/phc_color.jpg" alt="">
       </div>
+      <div class="content_box">
+        <h3>ColourFul Balance Car</h3>
+      </div>
+      </a>
     </li>
     <li class="product_li">
-      <img class="product_img" src="static/img/TORO.jpg" alt="">
-      <div class="content_box">
-        <h3>Castro TORO children watch</h3>
-        <p>Castro TORO children intelligent positioning Phone Watch</p>
+      <a href="/balance_car" class="product_a">
+      <div class="product_img_box">
+        <img class="product_img" src="/static/img/phc_red.jpg" alt="">
       </div>
+      <div class="content_box">
+        <h3>Big Red Balance Car</h3>
+      </div>
+      </a>
     </li>
   </ul>
   <div class="footer">
@@ -133,10 +152,18 @@
     </div>
   </div>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="static/js/swiper.3.1.7.jquery.min.js"></script>
-  <script>
 
-    var swiper = new Swiper('.swiper-container', {
+
+<!--
+ie浏览器使用swiper2.0
+非ie浏览器神勇swiper3.0
+-->
+  <!--[if !IE]><!-->
+    <link rel="stylesheet" href="/static/css/sass/swiper.3.1.7.min.css">
+   <script src="/static/js/swiper.3.1.7.jquery.min.js"></script>
+   
+  <script>
+   var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         effect : 'fade',
@@ -149,6 +176,22 @@
         } 
     });
   </script>
-  <script src="static/js/common.js"></script>
+  <!--><![endif]-->
+
+  <!--[if IE]>
+  <script src="/static/js/idangerous.swiper.min.js"></script>
+  <script>
+    var imgHeight=$('.banner_img ').height();
+     $('.swiper-container').css('height',imgHeight);
+    var mySwiper = new Swiper('.swiper-container',{
+    autoplay : 4000,
+    loop : true,
+     pagination: '.swiper-pagination',
+     paginationClickable :true
+    })
+  </script>
+  <![endif]-->
+    
+  <script src="/static/js/common.js"></script>
 </body>
 </html>
