@@ -494,6 +494,10 @@ html {
   padding-top: 60px;
 }
 
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: 300;
 }
@@ -561,6 +565,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #contact {
+  -webkit-overflow-scrolling: touch;
   display: none;
   max-width: 985px;
   margin: auto;
