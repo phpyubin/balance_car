@@ -33,6 +33,7 @@
       <div class="swiper-wrapper">
           <div class="swiper-slide"><a href="/balance_car"><img class="banner_img active" src="/static/img/banner2.jpg" alt=""></a></div>
           <div class="swiper-slide"><a href="/balance_car"><img class="banner_img" src="/static/img/banner1.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="/balance_car"><img class="banner_img" src="/static/img/banner3.jpg" alt=""></a></div>
       </div>
       <div class="swiper-pagination"></div>
   </div>
